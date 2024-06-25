@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nascionalidade </title>
+    <style>
+        body{
+            background-color: rgba(0, 255, 255, 0.292);
+        }
+    </style>
+</head>
+<body>
+    <h1>Certidao de nascimento</h1>
+    <input type="text" name="txtnas" id="txtnas">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">aqui vai o resultado  </div>
+    <script>
+        function verificar(){
+            var pais = document.querySelector('input#txtnas')
+            var res = document.querySelector('div#res')
+            var vel = String(pais.value)
+           res.innerHTML = `<p>você é de ${vel} seja bem vindo</p>`
+            if(vel == 'brasil'){
+    res.innerHTML+='voce é brasileiro'
+}else{
+    res.innerHTML += `estrangeiro`
+
+    
+    }
+}
+     
+    </script>
+</body>
+</html>

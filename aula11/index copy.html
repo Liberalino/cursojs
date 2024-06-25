@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nascionalidade</title>
+    <style>
+        body{background-color: rgba(186, 186, 12, 0.353);
+            
+        }
+        h1{
+        background-color: aliceblue;
+        width: 200px;
+        height: 100px;
+        border: 10px;
+        border-radius: 10px;
+        text-align: center;
+        
+        }
+        p{
+            font: normal 20pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Identidade</h1>
+    <p>Qual nascionalidade você é</p>
+
+<div class="pais">
+    <input type="text" name="txtpais" id="pais">   
+    <input type="button" value="verificar">
+</div> 
+<script>
+    function verificar(){}
+    var pais = window.document.getElementsByClassName('se seu pais nao for ')
+console.log(`vivendo em ${pais}`)
+if (pais == 'brasil'){
+    console.log('você é brasileiro!')
+} else{
+    console.log('você é estrangeiro')
+}
+</script></body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg,
+    #00fffc, #ffff);
+    border-radius: 10px;
+    transition: op
+    0.7 ease; cursor: pointer;
+}
+.maincontainer :hover>
+:not(:hover){
+    opacity: 0.2;
+
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+}

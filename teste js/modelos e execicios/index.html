@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        body{
+            background-color: rgb(189, 5, 5);
+        }
+        #area{
+            font: normal 20pt arial;
+            background: rgb(95, 174, 29);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        div#amor{
+            font: normal 20pt arial;
+            background: rgb(230, 80, 31);
+            color: rgba(30, 27, 230, 0.636);
+            width: 400px;
+            height: 400px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50%;
+          
+        }
+        div#cagar{
+            font: normal 20pt arial;
+            background: rgb(95, 174, 29);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(228, 174, 174);">
+    <div id="area"> Interaja...</div>
+    <div id="amor"> eu te amo  </div>
+    <div id="cagar">cagar</div>
+<script>
+      var    a =    window.document.getElementById('area')
+      var amar =    window.document.getElementById('amor')
+      var c    =    window.document.getElementById('cagar')
+      a.addEventListener('click', clicar)
+       a.addEventListener('mouseenter', entrar)
+       a.addEventListener('mouseout', sair)
+
+       amar.addEventListener('click', amor)
+       amar.addEventListener('mouseenter', coração)
+       amar.addEventListener('mouseout', deixar)
+
+       c.addEventListener('click', cagando)
+       c.addEventListener('mouseenter', peidando)
+       c.addEventListener('mouseout', bostanovaso)
+    function clicar(){
+        
+        a.innerText = 'clicou!'
+        a.style.background = 'red'
+    }
+    function entrar(){
+        a.innerText = 'entrou'
+        a.style.background = 'green'
+    }
+    function sair(){
+        a.innerText = 'saiu'
+     }
+    
+     
+    function amor(){
+      amar.innerText ='eu te amo mais'
+    }
+    function coração(){
+        amar.innerText = 'entrou no meu coração'
+        amar.style.background ='white'
+    }
+   function deixar(){
+    amar.innerText ='deixou o  meu coração'
+    amar.style.background =   'red'
+   }
+function cagando(){
+    c.innerText = 'cagando'
+}
+function peidando(){
+    c.innerText ='peidando'
+}
+function bostanovaso(){
+    c.innerText = 'intupio o vaso'
+}
+</script>
+</body>
+</html>  
